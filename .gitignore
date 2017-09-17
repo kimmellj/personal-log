@@ -1,0 +1,5 @@
+.dropbox-cred.json
+node_modules/
+tmp-storage
+.vscode
+coverage/

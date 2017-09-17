@@ -1,0 +1,4 @@
+{
+    "persistantFile": "./test-persistant.json",
+    "password": "thisisasuperlongpassword"
+}
