@@ -5,7 +5,7 @@ test( "Encrypt a message", () => {
 
     EncryptMessage.execute( "superlongpasswordfun", "foobar" ).then( ( encryptedMessage ) => {
         expect( encryptedMessage ).not.toBe( "foobar" )
-        expect( encryptedMessage ).toBe( "d8c6502267b4" )
+        expect( encryptedMessage ).toBe( "1eae373b678501a5549ccbb3c4fcce65" )
     } ).catch( ( err ) => {
         console.log( err )
         expect( err ).toBeNull()

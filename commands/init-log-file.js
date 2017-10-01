@@ -15,7 +15,6 @@ const RequestSafePasswordCommand = require( "./request-safe-password" ),
  */
 class InitLogFile {
     static execute() {
-        console.log( "Initializing log file..." )
         return new Promise( ( resolve, reject ) => {
             let returnMessage = ""
 
@@ -24,7 +23,7 @@ class InitLogFile {
             let message = {
                 "timestamp": Date.now(),
                 "user": process.env.USER,
-                "mesasge": "genesis"
+                "message": "genesis"
             }
 
             RequestSafePasswordCommand.execute().then( ( password ) => {

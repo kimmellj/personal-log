@@ -1,5 +1,5 @@
 const crypto = require( "crypto" ),
-    algorithm = "aes-256-ctr"
+    algorithm = "aes192"
 
 module.exports = class DecryptMessage {
     static execute( password, message ) {
