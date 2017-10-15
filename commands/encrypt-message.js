@@ -1,5 +1,5 @@
 const crypto = require( "crypto" ),
-    algorithm = "aes-256-ctr"
+    algorithm = "aes192"
 
 module.exports = class EncryptMessage {
     static execute( password, message ) {
@@ -12,6 +12,7 @@ module.exports = class EncryptMessage {
                 return reject( "There was an issue creating the cipher" )
             }
 
+            //@todo use base64 vs hex
             let crypted = cipher.update( message, "utf8", "hex" )
 
             crypted += cipher.final( "hex" )
