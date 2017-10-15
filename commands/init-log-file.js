@@ -27,6 +27,7 @@ class InitLogFile {
             }
 
             RequestSafePasswordCommand.execute().then( ( password ) => {
+                fileSystemDriver.setPassword( password )
                 fileSystemDriver.destroy().then( () => {
                     returnMessage += "Log file has been destroyed... \n"
 
